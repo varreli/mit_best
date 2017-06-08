@@ -1,0 +1,39 @@
+A function in mathematics is a map between input and output values. Fixed
+points are input values (for a function) which map to output values satisfying
+equality with the input.
+
+For the equality function
+
+f(x) = x
+
+the set of input value is equal to the set of fixed points of the function.
+
+For a function
+
+f(x)= x^2
+
+the set of fixed points is limited to {0, 1} .
+
+
+Imagine we are trying to define the factorial function: remember the definition
+of the factorial function:
+
+(define (fact n)
+(if (= n 1) 1
+(* n (fact (- n 1)))))
+
+Now in some PL frameworks (namely the λ-calculus), it isn't immediately obvious
+how to define such a function. However, it may be easy to define the following
+higher-order function, so-called because it takes as input another function and
+a natural number :
+
+Fact f 0 = 1
+Fact f (+ n 1) = n * (f n)
+
+There is no use of recursion in this function definition. However, if there was
+some way of finding the fix-point of Fact, that is, a function ϕ such that :
+
+Fact ϕ n = ϕ n
+
+for every n, then it is easy to check that ϕ is indeed an implementation of the
+factorial function.

@@ -1,0 +1,25 @@
+http://lambda-the-ultimate.org/node/5371
+
+Euclid's algorithm for the greatest common divisor is an imperative algorithm,
+among others, which form the very core of mathematics as expressed in Euclid's
+Elements.
+
+The point is to estimate the worst-case runtime for Euclids algorithm. Lamés
+theorem is the tool used to get that bound. Fibonacci numbers are the
+worst-case for Euclids algorithm.
+
+Fibonacci numbers are the smallest in the class of numbers that take N steps in
+Euclids algorithm.
+Whats the maximum number of steps required to take the GCD of a pair of two-digit
+numbers? We want an upper bound on runtime in terms of n. It turns out to occur
+at (gcd 55 89) , i.e. Fibonacci.
+
+With k steps, you have n >= Fib(k) This is not a loose bound.
+
+One iteration of Euclid turns the pair (Fib(k-1), Fib(k)) into (Fib(k-2, Fib(k-1)).
+So, its going to be k + O(1) steps before you stop.
+
+(gcd 3 5) also requires 4 steps. do the math. e.g. (gcd 55 34) requires many
+more steps. do the math.
+
+smallest monotonic bound

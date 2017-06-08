@@ -1,0 +1,6 @@
+abstract algebra
+category theory
+group theory
+Stillwell: Classical Topology and Combinatorial Group Theory -- book.
+
+prerequisites for algebraic topology and big data.

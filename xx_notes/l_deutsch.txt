@@ -1,0 +1,3 @@
+Lisp made me aware that software could be close to executable mathematics.
+
+- L. Peter Deutsch

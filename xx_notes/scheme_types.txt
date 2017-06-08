@@ -1,0 +1,21 @@
+example:
+(+ x (string-length y))
+
+- Implicit type inference:
+1) Variables and parameters are not decorated with type information.
+2) By studying the body of string-length it is concluded that y must be a string and that the type of
+(string-length y) has to be an integer.
+3) Because + adds numbers, it is concluded that x must be a number.
+
+- (whereas in) Explicit type decoration:
+1) Variables, parameters, and others are explicitly declared of a given type in the source program.
+2) It is checked that y is a string and that x is a number
+
+;;;
+
+The Scheme language is nice because of its extreme simplicity, flexibility and the power of its control structures
+based on continuations. As with many computer algebra languages (which are often based on Lisp), all type
+checking is done dynamically, at run-time. This has the advantage that an interpreter is extremely easy to write,
+but precious little type-knowledge is given to the compiler in order to produce really efficient code. Another
+disadvantage of the impossibility to define typed variables is that it is non-trivial to integrate overloading
+and implicit type-conversion into the language.

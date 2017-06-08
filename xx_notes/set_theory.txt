@@ -1,0 +1,3 @@
+The beauty of Lisp is similar to the beauty of set theory: it is very powerful and expressive, but also very small and simple. How to make its core even simpler?
+
+Simplicity is the reason why set theory is typeless -- all entities are of the same kind: sets.

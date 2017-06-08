@@ -1,0 +1,24 @@
+#lang racket (require racket/trace)
+
+(define (fib n)
+  (fib-iter 1 0 n))
+(define (fib-iter a b count)
+ 
+  (if (= count 0)
+      b
+      (fib-iter (+ a b) a (- count 1)))) ;  a <- a + b  ;  fib(+ n 1)
+                                         ;  b <- a      ;  fib(n)
+(trace fib-iter) (fib 11)
+
+;  This does not expand and contract. We merely keep track of the state
+;  variables : a , b and count. At every step each *state variable is updated.*
+;  This is a *linear iterative process.* When the procedure is recursive but
+;  the process generated is iterative, we have *tail recursion.*
+;  Note : To formulate the iterative algorithm required noticing that the
+;  computation could be recast as an iteration with three state variables.
+
+; display :
+
+;(begin (display a) (display " ") (display b)
+;       (display " ") (display count) (newline))
+

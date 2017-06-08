@@ -1,0 +1,6 @@
+from this site,
+
+http://people.cs.aau.dk/~normark/prog3-03/html/notes/higher-order-fu_themes-intr-section.html :
+
+
+Functions of order i, i >= 2, are called higher-order functions

@@ -1,0 +1,9 @@
+; http://mvanier.livejournal.com/2897.html?thread=10065
+
+
+(lambda (x) (lambda (y) x)) ; the inner lambda introduces y,
+; but y is not used. the final x is bound to the outer lambda (x),
+; no variable is free, so the function is a combinator.
+
+
+(lambda (x) (lambda (y) (x y)))

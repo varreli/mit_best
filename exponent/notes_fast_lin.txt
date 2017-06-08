@@ -1,0 +1,42 @@
+https://www.refheap.com/122828
+
+This is composed squarings & relates to the binary decomposition of the exponent , which Alex laid out.
+The fast-expt algorithm takes advantage of this.
+
+Know the exponentiation solution and how squaring makes it O(log n) instead of O(n) for n multiplications:
+
+x^5 = x*x*x*x*x = (x*x)*(x*x)*x = (x^2)*(x^2)*x
+
+You square instead of repeatedly multiplying by the base
+
+You get ((x^2)^2)*x which is three multiplications instead of five.
+
+Composed squarings, actually. & this relates to the binary decomposition of the exponent.
+that's what your math friend was laying out
+
+x^5 = x*(x^4).    x^(2n) = (x^n)*(x^n)
+
+here's another way of writing it that might help.  x^5 in terms of squarings:
+
+x^5 = x*x*x*x*x  = (x^4)*x = ((x^2)^2)*x    =   sqr(sqr(x))*x   where sqr(x) = x*x ...
+
+Me: ok, with an even case so every time you square, you halve the number of recursions with the (/ n 2) part. 
+
+
+If it's even you can square the result of using half that (even) exponent.
+you get from x^5 -> x^4 by multiplying x^4 by x. then you have an even exponent, and you reduce using squaring
+so there are 2 reduction paths depending on whether the exponent is even.
+
+Me: ok, that is a trip. reduction paths is a good term. one sec
+right, the second reduction path is a simple (- n 1)
+
+On one path, you halve the (even) exponent and square. in the other, you subtract one and multiply by x.
+
+yes. these two paths allow you to evaluate for any positive *integer* exponent.
+
+We have two identities:
+
+1) even = (x^2) => x^(2n/2) = (x^n)*(x^n)
+2) odd = exponent is n+1 (if n is even) => x^(n+1) = x*x^n
+
+; https://www.refheap.com/122839

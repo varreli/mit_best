@@ -1,0 +1,14 @@
+The primitive Cons means to construct. Cons takes two arguments and returns a list constructed from the arguments. In this capacity, it provides a means of combination for Scheme.
+
+Car : Contents of Address part of the Register. Car will return the first element in a list. (primitive)
+
+Cdr : Contents of Decrement part of the Register. I.e. the second and subsequent items in a list. (primitive)
+
+Cadr is a nested application of car and cdr. This is the contents of the address part of contents of the decrement part of the register. (primitive)
+
+Primitive definitions:
+
+car  = first item
+cdr  = second and all subsequent items in list
+
+cadr = second item

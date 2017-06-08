@@ -1,0 +1,44 @@
+Indivicivet: now imagine the points (1,0) and (-1,0) in the plane
+
+
+say call them a,b. then the inequality |x-1| + |x+1| > 3 is the same as saying
+"the sum of the distance from a and the distance from b is greater than 3"
+
+Indivicivet
+so if you have a rope of length 3, and you want it to cover a->point->b, then for
+that point, "the sum of the distance from a and the distance from b is *at most* 3"
+... so physically imagine attaching your rope to those points ((1,0) and (-1,0))
+and moving it around
+
+the area you can cover is precisely where |x-1|+|x+1| <= 3
+eivarv has joined (~eivarv@cm-84.215.4.97.getinternet.no)
+
+so, everywhere you CAN'T cover satisfies your original inequality
+
+then you just imagine restricting that to the real line
+
+
+Indivicivet
+http://i.imgur.com/cxMhisv.png
+
+you have your two points a and b, and the coloured lines are ways to set up the rope such that
+it goes to some point and the rope's length is at most 3 (it's a rope, so you can let it go slack, but it won't stretch); then that gives you the gray shaded area, which is everywhere you can put your point
+
+then that's where your original inequality is *not* satisfied
+
+so it's satisfied outside of that.
+And in particular, since you want x on the real line and not on the plane, it's the intersection with the line y=0 ;
+ie the dotted thing. so the area you want is the pink highlighted bits outside
+
+by the way, because the rope has length 3, the left side of the ellipse is at (-1.5, 0) (because that's dist 0.5 from a and 2.5 from b = 3) and the right side is (1.5, 0)
+
+What is the method? how do you first take |x+1| and intuit how to get -1 , 1 ?
+answer:
+|x+1| is the distance between x and -1    ****
+
+because the distance between a, b is |a-b|
+
+
+Svitkona: all you need to do is think about the definition of |x|
+
+|x| = x if x >= 0; -x otherwise

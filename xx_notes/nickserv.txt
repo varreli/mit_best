@@ -1,0 +1,3 @@
+commands in correct order, to add a nick to my main group on freenode :
+/nick theNewNick
+/msg nickserv group main_nick password

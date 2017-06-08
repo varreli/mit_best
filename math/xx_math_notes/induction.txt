@@ -1,0 +1,3 @@
+re: learning from math fundamentals or not:
+
+Induction and abstract algebras might be considered more fundamental, but are introduced much later.

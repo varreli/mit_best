@@ -1,0 +1,14 @@
+"All problems in computer science can be solved by another level
+of indirection." D Wheeler
+
+Lazy comprehensions.
+Eager comprehensions.
+
+In Haskell, especially in the world of concurrency and many cores, the compiler is allowed to completely rearrange
+the execution order of a program. These programs are mathematical functions so the compiler has complete freedom:
+it knows that whenever you call something twice, it only returns the same result. This is guaranteed by the type
+system ... and very important.
+
+With every type of side effect there is a different notion of garbage collection. This is essentially what a Monad is,
+though many languages disguise the trick under different names. This is the "extra level of indirection" quoted above.
+Everything with a side effect is seen as a type that indicates something is going wrong.

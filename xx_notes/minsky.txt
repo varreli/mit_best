@@ -1,0 +1,5 @@
+http://web.media.mit.edu/~minsky/papers/TuringLecture/TuringLecture.html
+
+Syntax is Often Unnecessary. One can survive with much less syntax than is generally realized. Much of programming syntax is concerned with suppression of parentheses or with emphasis of scope markers. There are alternatives that have been much underused.
+
+I am not against the use of infixes and operator precedence. They have their place. But their importance to computer science as a whole has been exaggerated.
