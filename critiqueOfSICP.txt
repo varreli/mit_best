@@ -1,0 +1,57 @@
+
+Would it help to compare SICP to Dijkstra's A Discipline of Programming, or
+Gries' A Science of Programming? Both are far superior texts, from a formal
+perspective. Less formally, the Van Roy book (as mentioned earlier) is a close
+analogue to SICP, and is far superior.
+
+full blog here : http://www.amazon.com/review/R403HR4VL71K8
+
+"The people who hate SICP are the ones who just want to know how to drive their
+car on the highway, just like everyone else."
+"Those who hate SICP think it doesn't deliver enough tips and tricks for the
+amount of time it takes to read."
+
+That attitude speaks volumes about the kind of people who are attracted to SICP.
+Let me respond with a generalization of my own:
+"The people who love SICP tend not to be the best or the smartest programmers,
+but they generally think they are." A distillation
+of my opinion on LISP programmers.
+
+SICP has some good information in it, sure, and maybe for some people it is
+eye-opening, but it is not a book that I ever recommend.
+Why? Because it's just not that good of a book.
+
+* The writing is obtuse. The introductory material is full of sentences that
+would be winning entries in the Obfuscated C contest
+if they were code. "A procedure is a pattern for the *local evolution* of a
+computational process." Right. Thanks for clearing that
+up -- I used to know what a procedure was.
+
+* Scheme is a horrible choice of language. The content of the book is largely
+theoretical; why not use psuedocode? If the intent is
+to teach the functional mindset, why not use ML? Code written in LISP-based
+languages reads like an AST; it should be fed to a
+compiler,
+not read by a human.
+
+* The book can't decide what it wants to be. It fails both as an introductory
+text (too abstract) and as a theoretical text (too
+specific to Scheme).
+
+As far as I can tell, people love SICP when it has altered they way they think
+about programming. If the book does not have this
+effect, it has little to offer the reader -- there are the first three chapters
+which can be summed up as "Please Use Scheme!",
+then a quite good chapter on DSLs (er, 'Metalinguistic Obfuscation' or
+whatever), and finally a rather embarrassing chapter on
+compiler construction.
+
+There are better books on programming in general (the Van Roy book), better
+books on functional programming (Maclennan, Okasaki,
+etc), better books on compilers (the dragon book, Appel, Scott, etc) ... you
+name it, there's a better book on it. 'LISP In
+Small Pieces' even provides a better eye-opening LISP experience.
+
+So, fans of SICP, stop telling yourselves that the people who didn't enjoy SICP
+"don't get it". It's an okay book, but what little
+there is to 'get' is better learned elsewhere.
